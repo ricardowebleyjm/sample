@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  webapp:
+    container_name: sample
+    restart: always
+    build: .
+    volumes:
+      - .:/src
+    ports:
+      - 9005:9005
